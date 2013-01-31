@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,9 +7,10 @@
 <title>SmartQ Service</title>
 </head>
 <body>
-Welcome to SmartQ Service
-
-<h2>${rightNowTime}</h2>
-
+	<div>
+		<h4>${rightNowTime}</h4>
+	</div>
+	<div>Current Number = ${currentQueueNumber}</div>
+	<div>Waiting = ${waitingQueue}</div>
 </body>
 </html>

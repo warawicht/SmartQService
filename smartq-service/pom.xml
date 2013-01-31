@@ -9,7 +9,7 @@
 	<url></url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring-version>3.2.0.RELEASE</spring-version>
+		<org.springframework.version>3.2.0.RELEASE</org.springframework.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -21,7 +21,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>${spring-version}</version>
+			<version>${org.springframework.version}</version>
 		</dependency>
 	</dependencies>
 	<build>

@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.smartq.utils.TimeUtils;
 
 @Controller
-public class WelcomeController {
+public class CustomerController {
 
-    @RequestMapping(method=RequestMethod.GET, value="/hello")
+    @RequestMapping(method=RequestMethod.GET, value="/customer")
     public String handleRequest(final Model model){
 
-        model.addAttribute("rightNowTime", TimeUtils.getRightNowTime());
-        return "welcome";
+        model.addAttribute("rightNowTime",  TimeUtils.getRightNowTime());
+        model.addAttribute("currentQueueNumber",  1);
+        model.addAttribute("waitingQueue",  100);
+
+        return "display";
     }
-
-
-
 
 }
