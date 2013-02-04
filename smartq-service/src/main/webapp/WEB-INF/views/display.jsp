@@ -8,9 +8,24 @@
 </head>
 <body>
 	<div>
+	    <h1>Smart Queue</h1>
+	    	    
 		<h4>${rightNowTime}</h4>
 	</div>
 	<div>Current Number = ${currentQueueNumber}</div>
-	<div>Waiting = ${waitingQueue}</div>
+	<div>Waiting = ${waitingInQueue}</div>
+
+	<hr>
+
+	<form method="POST" action="/smartq-service/addQueue">
+		<input type="submit" value="Add Queue" />
+	</form>
+
+	<hr>
+
+	<form method="POST" action="/smartq-service/pollQueue">
+		<input type="submit" value="Poll Queue" />
+	</form>
+
 </body>
 </html>
